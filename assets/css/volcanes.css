@@ -1,0 +1,123 @@
+:root {
+  --vol-blue: #0b4d8f;
+  --vol-blue-dark: #083764;
+  --vol-cyan: #1bb8d9;
+  --vol-light: #f3f8fc;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #1f2d3d;
+}
+
+.topbar {
+  background: var(--vol-blue-dark);
+  color: #dce9f7;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.topbar a { color: #dce9f7; }
+
+.header {
+  top: 36px;
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0,0,0,.06);
+}
+
+.header .sitename { color: var(--vol-blue); font-weight: 700; }
+.header .logo i { color: var(--vol-cyan); }
+
+.navmenu a { font-weight: 600; }
+.navmenu a.active, .navmenu a:hover { color: var(--vol-blue); }
+
+.page-hero {
+  margin-top: 110px;
+  background: linear-gradient(120deg, rgba(8,55,100,.92), rgba(11,77,143,.82)), url('../img/education/showcase-1.webp') center/cover;
+  color: #fff;
+  padding: 88px 0;
+}
+
+.page-hero h1 { font-weight: 800; color: #fff; }
+.page-hero p { color: #e8f2fb; max-width: 760px; }
+
+.main-cta {
+  background: var(--vol-cyan);
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 10px;
+}
+
+.main-cta:hover { background: #13a4c2; color: #fff; }
+
+.secondary-cta {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 10px;
+}
+
+.kpi-card, .service-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(6,52,88,.08);
+}
+
+.kpi-card {
+  padding: 18px;
+  border-left: 4px solid var(--vol-cyan);
+}
+
+.kpi-card h3 { color: var(--vol-blue); margin: 0; }
+.kpi-card p { margin: 0; color: #61758a; }
+
+.section-soft {
+  background: var(--vol-light);
+}
+
+.service-card {
+  padding: 24px;
+  height: 100%;
+}
+
+.service-card .icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: #e8f5fb;
+  color: var(--vol-blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.service-card h4 { color: var(--vol-blue); }
+
+.contact-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 28px rgba(6,52,88,.08);
+  height: 100%;
+}
+
+.contact-box i { color: var(--vol-cyan); font-size: 24px; }
+
+.footer {
+  background: #072b4d;
+  color: #d0e1f1;
+}
+
+.footer a { color: #d0e1f1; }
+
+@media (max-width: 1199px) {
+  .header { top: 0; }
+  .page-hero { margin-top: 76px; }
+  .topbar { display: none; }
+}
